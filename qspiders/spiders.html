@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="spiders.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" onclick="display('sectionHome')">
+                        <img src="https://www.qspiders.com/_nuxt/img/qspiders_logo.6096665.png" class="w-100">
+                    </a>
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav ml-auto" > 
+                        <a class="nav-link active" href="#" id="navitem" onclick="display('sectionHome')">
+                            <i class="fa-solid fa-house"></i>Home
+                          <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link "style="color:black" href="#"  onclick="display('sectionWcu')"><i class="fa-solid fa-book mr-2"></i> Courses</a>
+                        <a class="nav-link " style="color:black;;" href="#"  onclick="display('sectionMenu')"><i class="fa-solid fa-calendar-days mr-2"></i>Batches</a>
+                        <a class="nav-link " style="color:black" href="#"  onclick="display('sectionDelivary')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boxes mr-2" viewBox="0 0 16 16">
+                            <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"/>
+                          </svg>Corporates</a>
+                        <a class="nav-link " style="color:black" href="#"  onclick="display('sectionGift')"><i class="fa-solid fa-map-location-dot mr-2"></i>Contact</a>
+    
+                        <a class="nav-link" href="#" id="navitem1" onclick="display('sectionGift')"><i class="fas fa-users mr-2"></i>Placements</a>
+                        <a class="nav-link" style="font-size: 18px;" href="#" id="navitem2" onclick="display('sectionGift')"><i class="fa-solid fa-pen-to-square mr-2"></i>Enquiry</a>
+                        <a class="nav-link" style="font-size: 18px;" href="#" id="navitem2" onclick="display('sectionGift')"><i class="fa-solid fa-phone mr-2"></i>+919686111919</a>
+                        <a class="nav-link" style="font-size: 18px;" href="#" id="navitem2" onclick="display('sectionGift')"><i class="fa-solid fa-phone mr-2"></i>+919108993972</a>
+                      </div>
+                    </div>
+        
+                </div>
+            </nav>
+        </div>
+
+        <div class="state-container d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap">
+                            <select class="global" style="background-image: linear-gradient(90deg,#FF00FF,#00FF00)">
+                                <option>global</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-image: linear-gradient(45deg,black,orange)">
+                                <option>online</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-image: linear-gradient(30deg,#9b4443,#015b52)">
+                                <option>Karnataka</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-image: linear-gradient(60deg,#023167,#ff501c)">
+                                <option>Maharashtra</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: green">
+                                <option>Tamil Naidu</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: rgb(32, 32, 100);">
+                                <option>Telangana</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-image: linear-gradient(45deg, rgb(212, 173, 212),rgb(186, 16, 56),rgb(91, 11, 203));">
+                                <option>Andhra Pradesh</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: rgb(49, 49, 107);">
+                                <option>Madhya Pradesh</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: rgb(96, 96, 102);">
+                                <option>Chanddigrah</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: rgb(91, 192, 119);">
+                                <option>Haryana</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: rgb(146, 233, 204);">
+                                <option>Odisha</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: brown;">
+                                <option>Uttar Pradesh</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: rgb(96, 96, 102);">
+                                <option>West Bengal</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-image: linear-gradient(90deg,orange,white,green);">
+                                <option>New Delhi</option>
+                                <option>global</option>
+                                
+                            </select>
+                            <select class="global" style="background-color: rgb(13, 13, 84);">
+                                <option>kerala</option>
+                                <option>global</option>
+                                
+                            </select>
+                            
+                       
+                        
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    
+
+
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12 col-md-4  ">
+                    <div class="bgColor responsive-height-container p-3 m-2 ">
+                        <h4 class="heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-globe-asia-australia mr-1" viewBox="0 0 16 16">
+                                <path d="m10.495 6.92 1.278-.619a.483.483 0 0 0 .126-.782c-.252-.244-.682-.139-.932.107-.23.226-.513.373-.816.53l-.102.054c-.338.178-.264.626.1.736a.48.48 0 0 0 .346-.027ZM7.741 9.808V9.78a.413.413 0 1 1 .783.183l-.22.443a.6.6 0 0 1-.12.167l-.193.185a.36.36 0 1 1-.5-.516l.112-.108a.45.45 0 0 0 .138-.326M5.672 12.5l.482.233A.386.386 0 1 0 6.32 12h-.416a.7.7 0 0 1-.419-.139l-.277-.206a.302.302 0 1 0-.298.52z"/>
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1.612 10.867l.756-1.288a1 1 0 0 1 1.545-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.88.88 0 0 0 .26-.755c-.075-.548.37-1.033.92-1.099.728-.086 1.587-.324 1.728-.957.086-.386-.114-.83-.361-1.2-.207-.312 0-.8.374-.8.123 0 .24-.055.318-.15l.393-.474c.196-.237.491-.368.797-.403.554-.064 1.407-.277 1.583-.973.098-.391-.192-.634-.484-.88-.254-.212-.51-.426-.515-.741a7 7 0 0 1 3.425 7.692 1 1 0 0 0-.087-.063l-.316-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.741.051l-1.021-.329A1 1 0 0 0 11.205 9h-.165a1 1 0 0 0-.945.674l-.172.499a1 1 0 0 1-.404.514l-.802.518a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257a1 1 0 0 1 .542.16l.762.49a1 1 0 0 0 .283.126 7 7 0 0 1-9.49-3.409Z"/>
+                              </svg>
+                            LARGEST SOFTWARE TRAINING ORGANISATION
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-globe-asia-australia ml-1" viewBox="0 0 16 16">
+                                <path d="m10.495 6.92 1.278-.619a.483.483 0 0 0 .126-.782c-.252-.244-.682-.139-.932.107-.23.226-.513.373-.816.53l-.102.054c-.338.178-.264.626.1.736a.48.48 0 0 0 .346-.027ZM7.741 9.808V9.78a.413.413 0 1 1 .783.183l-.22.443a.6.6 0 0 1-.12.167l-.193.185a.36.36 0 1 1-.5-.516l.112-.108a.45.45 0 0 0 .138-.326M5.672 12.5l.482.233A.386.386 0 1 0 6.32 12h-.416a.7.7 0 0 1-.419-.139l-.277-.206a.302.302 0 1 0-.298.52z"/>
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1.612 10.867l.756-1.288a1 1 0 0 1 1.545-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.88.88 0 0 0 .26-.755c-.075-.548.37-1.033.92-1.099.728-.086 1.587-.324 1.728-.957.086-.386-.114-.83-.361-1.2-.207-.312 0-.8.374-.8.123 0 .24-.055.318-.15l.393-.474c.196-.237.491-.368.797-.403.554-.064 1.407-.277 1.583-.973.098-.391-.192-.634-.484-.88-.254-.212-.51-.426-.515-.741a7 7 0 0 1 3.425 7.692 1 1 0 0 0-.087-.063l-.316-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.741.051l-1.021-.329A1 1 0 0 0 11.205 9h-.165a1 1 0 0 0-.945.674l-.172.499a1 1 0 0 1-.404.514l-.802.518a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257a1 1 0 0 1 .542.16l.762.49a1 1 0 0 0 .283.126 7 7 0 0 1-9.49-3.409Z"/>
+                              </svg>
+                        </h4>
+                        <div style="text-align: justify;">
+                            <p class="para">QSpiders is the world’s ace software training organization with an aim to bridge the gap between the demands of the industry and the curriculum of educational institutions.</p>
+                            <p class="para">With centers across the Globe, the institute is a platform where young minds are given the opportunity to build successful careers.</p>
+                            <p class="para">”QSpiders is a place where businesses find talent and dreams take flight."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-4 ">
+                    <div class=" placements responsive-height-container p-3 m-2">
+                        <h5 class="heading"><i class="fas fa-users mr-1"></i> PLACEMENTS STATICS <i class="fas fa-users ml-1"></i></h5>
+                        <div class="placement-containers">
+                            <h6 class="placement-statics"><span>266772  </span>   Placed who have throughtout 60% <br>aggregate</h6>
+                        </div>
+        
+                        <div class="placement-containers">
+                            <h6 class="placement-statics"><span>122972  </span>   Placed Students who have graduated in Non-IT</h6>
+                        </div>
+        
+                        <div class="placement-containers">
+                            <h6 class="placement-statics"><span>161728  </span>   Placed Students who have graduated in IT/CS/IS</h6>
+                        </div>
+        
+                        <div class="placement-containers">
+                            <h6 class="placement-statics"><span>28152  </span>   Placed Students who have less than 60% aggregate in Degree</h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-4">
+                    <div class=" placed-students responsive-height-container p-3 mt-3">
+                        <h5 class="heading">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill mr-1" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                              </svg> PLACEMENTS STATICS <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill ml-1" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                              </svg></h5>
+                        
+                        <div class="year">
+                            <p>Year</p>
+                        </div>
+                        <div class="yearBox ">
+                            <p class="year1" style="background-color: orange;">2024</p>
+                            <p class="year1">2023</p>
+                            <p class="year1">2022</p>
+                            <p class="year1">2021</p> 
+                            <p class="year1">2020</p> 
+                            
+                        </div>
+    
+                        <div class="year">
+                            <p>Degree</p>
+                        </div>
+                        <div class="yearBox ">
+                            <p class="degree">BE/BETECH</p>
+                            <p class="degree">BSC/BCA</p>
+                            
+                            
+                        </div>
+    
+                        <div class="year">
+                            <p>Degree</p>
+                        </div>
+                        <div class="yearBox ">
+                            <p class="degree">BE/BETECH</p>
+                            <p class="degree">BSC/BCA</p>
+                            
+                            
+                        </div>
+    
+                        <div class="text-center">
+                            <button class="button"><i class="fas fa-users mr-1"></i>Want to hire our students</button>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-12 col-md-2 rating-container">
+                    <h1 class="rating-heading"><i class="fa-solid fa-star"></i> No.1 <i class="fa-solid fa-star"></i></h1>
+                    <p>Training Center in the World and also the Largest.</p>
+                </div>
+                <div class="col-12 col-md-2 rating-container">
+                    <h1 class="rating-heading"><i class="fa-solid fa-star"></i> 2.51 Laks <i class="fa-solid fa-star"></i></h1>
+                    <p>Students have been Placed, and still counting!</p>
+                </div>
+                <div class="col-12 col-md-2 rating-container">
+                    <h1 class="rating-heading"><i class="fa-solid fa-star"></i> 4870+ <i class="fa-solid fa-star"></i></h1>
+                    <p>Multinational companies hire from us, and the list is still growing.</p>
+                </div>
+                <div class="col-12 col-md-2 rating-container">
+                    <h1 class="rating-heading"><i class="fa-solid fa-star"></i> 27-32 <i class="fa-solid fa-star"></i></h1>
+                    <p>Companies conduct interviews every working day.</p>
+                </div>
+                <div class="col-12 col-md-2 rating-container">
+                    <h1 class="rating-heading"><i class="fa-solid fa-star"></i> 2000-3000 <i class="fa-solid fa-star"></i></h1>
+                    <p>Students attend interviews every day across companies.</p>
+                </div>
+                <div class="col-12 col-md-2 rating-container">
+                    <h1 class="rating-heading"><i class="fa-solid fa-star"></i> 4000-6000 <i class="fa-solid fa-star"></i></h1>
+                    <p>Students get placed in a Month across the Globe.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid mr-5 ml-5">
+            <div class="row">
+                <div class=" col-12 rating-container mt-3">
+                    <h5 class="course-heading">Course</h5>
+                    <p style="margin: 0px;">We have the most complete range of software training courses needed by the professionals around the world.Please do contact us for any queries related to the courses.</p>
+                    <p class="course-orange-heading" >Here are some of the popular courses we offer.</p>
+                    <button class="java-button">Java Full Stack</button>
+                    <button class="python-button">Software Testing</button>
+                    <button class="java-button">MEAN OR MERN</button>
+                    <button class="python-button">Python Full Stack</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid mr-5 ml-5">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="logo-container testing-height-container mt-3  ">
+                        <div class="d-flex justify-content-between p-3" style="background-color: rgb(234, 230, 230);">
+                            <h6 class="software-heading">Software Testing</h6>
+                            <div class="d-flex">
+                                <img src="https://api.qspiders.com/media/course_images/ST_iABpdrG.png" class="java-image ">
+                                <img src="https://api.qspiders.com/media/course_images/java_FCeuhLy.png" class="java-image ">
+                                <img src="https://api.qspiders.com/media/course_images/selenium_2_43670s3.png" class="java-image ">
+                                <img src="https://api.qspiders.com/media/course_images/db_dBe0dL2.png" class="java-image ">
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="p-2">Software testing course is more of job oriented training which is designed as per current industry standards. You can start IT industry with basic and advance skills. Course will be trained by top industry experts who have passion to train students and help them get job in IT industry or excel in IT industry.</p>
+                        </div>
+
+                        <div class="d-flex ">
+                            <button class="details-button course-button-width "> Batches </button>
+                            <button class="buttoenrolln course-button-width ">Enroll </button>
+                            <button class="details-button course-button-width ">Batches</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="logo-container testing-height-container mt-3 ">
+                        <div class="d-flex justify-content-between p-3" style="background-color: rgb(234, 230, 230);">
+                            <h6 class="software-heading">Core Java and Selenium</h6>
+                            <div class="d-flex ">
+                        
+                                <img src="https://api.qspiders.com/media/course_images/java_2O1JcFV.png" class="java-image ">
+                                <img src="https://api.qspiders.com/media/course_images/selenium_2_rSuwSIV.png" class="java-image ">
+                                
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="p-2">This course is designed for all manual testers who wants to upgrade their skills to automation. Course will be trained by top industry experts who have passion to train students and help then upgrade their skills level.</p>
+                        </div>
+
+                        <div class='items-bottom  '>
+                            <button class="details-button course-button-width">Details</button>
+                            <button class="buttoenrolln course-button-width">Enroll</button>
+                            <button class="details-button course-button-width">Batches</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="logo-container testing-height-container mt-3 ">
+                        <div class="d-flex justify-content-between p-3" style="background-color: rgb(234, 230, 230);">
+                            <h6 class="software-heading">Python-Selenium</h6>
+                            <div class="d-flex ">
+                                <img src="https://api.qspiders.com/media/course_images/python_new_X3s0FNy.png" class="java-image ">
+                                
+                                <img src="https://api.qspiders.com/media/course_images/selenium_2_4hLZvkR.png" class="java-image ">
+                                
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="p-2">This course is designed for all manual testers who wants to upgrade their skills to automation. Course will be trained by top industry experts who have passion to train students and help then upgrade their skills level..</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <button class="details-button course-button-width ">Details</button>
+                            <button class="buttoenrolln course-button-width ">Enroll</button>
+                            <button class="details-button course-button-width ">Batches</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="logo-container testing-height-container mt-3 ">
+                        <div class="d-flex justify-content-between p-3" style="background-color: rgb(234, 230, 230);">
+                            <h6 class="software-heading">API Testing Testing</h6>
+                            <div class="d-flex ">
+                                <img src="https://api.qspiders.com/media/course_images/api_hdkBI7j.png" class="java-image ">
+                                
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="p-2">API testing course designed for those who are interested in API testing and want to learn more about middle ware testing. This also gives different types of testing methodologies with respect to API testing with different types of API’s.</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <button class="details-button course-button-width ">Details</button>
+                            <button class="buttoenrolln course-button-width ">Enroll</button>
+                            <button class="details-button course-button-width ">Batches</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex mt-3 mb-5 flex-wrap">
+                        <img src="http://api.qspiders.com/media/clients/Deliotte_C9ukSJM_1_yA82JEr.png" class="mr-5">
+                        <img src="http://api.qspiders.com/media/clients/Capegemini_60.png" class="mr-5">
+                        <img src="http://api.qspiders.com/media/clients/Integra_Micro_Systems_chIzJjj.jpg" class="mr-5">
+                        <img src="http://api.qspiders.com/media/clients/EFI_pdQaA6e.png" class="mr-5">
+                        <img src="http://api.qspiders.com/media/clients/arisglobal-logo-new_0_ijEbzaU.png" class="mr-5">
+                        <img src="http://api.qspiders.com/media/clients/Birlasoft_YZhugEA.png" class="mr-5">
+                        <img src="http://api.qspiders.com/media/clients/3dplm_XXe7oH6.png" class="mr-5">
+            
+                        <img src="http://api.qspiders.com/media/clients/allstate-logo-header-170x45_W9ycizB.png" class="mr-5">
+                        <img src="http://api.qspiders.com/media/clients/Metric_stream_qYDZUOg.png" class="mr-5">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+    
+
+</body>
+</html>
